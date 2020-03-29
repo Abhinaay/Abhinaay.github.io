@@ -37,6 +37,15 @@
   </head>
   <body style="background: #f1f1f1">
     
+
+      <!-- Loader -->
+      <div class="loadingio-spinner-ellipsis-v7thb8eeyld" id="loader"><div class="ldio-oyevky1fkgp">
+        <div></div><div></div><div></div><div></div><div></div>
+        </div></div>
+        
+
+
+
         <div class="parallax1">
 
                 
@@ -389,6 +398,20 @@
     
       <a href="index.html" class="back-to-home"><span>HOME</span></a>
 
+      <!-- Loader Script -->
+      <script>
+      
+      document.onreadystatechange = function() { 
+      if (document.readyState !== "complete") { 
+         document.querySelector("body").style.visibility = "hidden"; 
+         document.querySelector("#loader").style.visibility = "visible"; 
+      } else { 
+         document.querySelector("#loader").style.display = "none"; 
+         document.querySelector("body").style.visibility = "visible"; 
+      } 
+    }; 
+
+      </script>
 
       <!-- JavaScript Libraries -->
       <script src="lib/jquery/jquery.min.js"></script>
